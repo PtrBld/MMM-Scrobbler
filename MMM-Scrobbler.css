@@ -1,0 +1,25 @@
+.player{
+margin-top:20px;
+width:200px;
+}
+.album-art-container{
+}
+.album-art{
+width:200px;
+}
+
+.meta{
+text-align: left;
+}
+.track-name{
+font-size:20px;
+font-weight: bold;
+margin: 0;
+}
+.artist-name{
+font-size:20px;
+margin: 0px;}
+
+.album-name{
+font-size:16px;
+margin: 0px;}
