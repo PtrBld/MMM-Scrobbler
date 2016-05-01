@@ -2,14 +2,18 @@
 This is an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror/tree/v2-beta). It displays your currently playing music. To use this module you need to have a Last.fm account and scrobble your music.
 
 ## Installation
+
 1. Navigate into your MagicMirror's `modules` folder and execute `git clone https://github.com/PtrBld/MMM-Scrobbler.git`.
-2. A new folder will appear.
-That's all
+
+2. A new folder will appear. That's all :)
 
 ##Configuration
 You can scrobble all your music with Last.fm.
+
 1. Create an [account](https://secure.last.fm/de/join)
+
 2. Create an [api key](http://www.last.fm/api/account/create)
+
 3. Configure your client to scrobble your music. [How To: Scrobble to Last.fm from iTunes, Spotify, and more](http://www.cnet.com/how-to/how-to-scrobble-to-last-fm-from-itunes-spotify-and-more/)
 
 ##Module Usage
