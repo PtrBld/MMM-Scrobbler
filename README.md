@@ -1,5 +1,5 @@
 # MMM-Scrobbler
-This is an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror/tree/v2-beta). It displays your currently playing music. To use this module you need to have a Last.fm account and scrobble your music.
+This is an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror). It displays your currently playing music. To use this module you need to have a Last.fm account and scrobble your music.
 
 ## Installation
 
