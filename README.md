@@ -39,6 +39,8 @@ The entry in the `module array` in your `config.js` can look like the following.
 		//set this to the same number as updateInterval to ignore this option	
 		delayInterval: 120*1000,
 		animationSpeed: 1000,
+		showAlbumArt: true,
+	    	showMetaData: true,
 		}
 	
 }
