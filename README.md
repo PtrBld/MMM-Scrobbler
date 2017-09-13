@@ -41,6 +41,8 @@ The entry in the `module array` in your `config.js` can look like the following.
 		animationSpeed: 1000,
 		showAlbumArt: true,
 	    	showMetaData: true,
+		//Determines the position of the meta text. Possible values: bottom, left, right
+		alignment: "bottom", 
 		}
 	
 }
