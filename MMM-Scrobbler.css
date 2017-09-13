@@ -37,7 +37,7 @@ margin: 0px;}
 }
 
 .left {
-  display: block;
+  display: inline-flex;
 }
 
 .right {
