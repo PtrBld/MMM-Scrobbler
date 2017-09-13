@@ -9,6 +9,7 @@ Module.register("MMM-Scrobbler",{
 		animationSpeed: 1000,
 	    showAlbumArt: true,
 	    showMetaData: true,
+	    alignment: "bottom", //possible values: bottom, left, right
     },
 	getStyles: function() {
 		return ['MMM-Scrobbler.css']
@@ -40,12 +41,22 @@ Module.register("MMM-Scrobbler",{
 			this.failedCounter = 0;
 			this.delay = this.config.updateInterval;
 			this.show(this.config.animationSpeed);
-			var html = "<div class='player bright'>";
+			var html = "<div class='player bright "+this.config.alignment+"'>";
+			var albumart_html = '';
+			var meta_html = '';
 			if(this.config.showAlbumArt){
-				html += "<div class='album-art-container'><div class='album-art'><img src='"+ this.songData.image +"' width='200'></div></div>";
+				albumart_html += "<div class='album-art-container'><div class='album-art'><img src='"+ this.songData.image +"' width='200'></div></div>";
 			}
 			if(this.config.showMetaData){
-				html += "<div class='meta'><table class='small'><tr class='track-name bright'><td>"+this.songData.title+"</td></tr><tr class='artist-name'><td>"+this.songData.artist +"</td></tr><tr class='album-name dimmed'><td>"+this.songData.album+"</td></tr></table></div>";
+				meta_html += "<div class='meta'><table class='small'><tr class='track-name bright'><td>"+this.songData.title+"</td></tr><tr class='artist-name'><td>"+this.songData.artist +"</td></tr><tr class='album-name dimmed'><td>"+this.songData.album+"</td></tr></table></div>";
+			}
+			if(this.config.alignment === 'left'){
+				html += meta_html;
+				html += albumart_html;
+			}
+			else{
+				html += albumart_html;
+				html += meta_html;		
 			}
 			html += "</div>";
 			wrapper.innerHTML = html;
