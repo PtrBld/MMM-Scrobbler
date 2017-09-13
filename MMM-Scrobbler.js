@@ -41,7 +41,7 @@ Module.register("MMM-Scrobbler",{
 			this.failedCounter = 0;
 			this.delay = this.config.updateInterval;
 			this.show(this.config.animationSpeed);
-			var html = "<div class='player bright "+this.config.alignment+"'>";
+			var html = "<div class='player bright scrobbler-"+this.config.alignment+"'>";
 			var albumart_html = '';
 			var meta_html = '';
 			if(this.config.showAlbumArt){
