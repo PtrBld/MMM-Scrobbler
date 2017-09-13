@@ -9,7 +9,7 @@ Module.register("MMM-Scrobbler",{
 		animationSpeed: 1000,
 	    showAlbumArt: true,
 	    showMetaData: true,
-	    alignment: "bottom", //possible values: bottom, left, right
+	    alignment: "bottom", //possible values: top, bottom, left, right
     },
 	getStyles: function() {
 		return ['MMM-Scrobbler.css']
@@ -50,7 +50,7 @@ Module.register("MMM-Scrobbler",{
 			if(this.config.showMetaData){
 				meta_html += "<div class='meta'><table class='small'><tr class='track-name bright'><td>"+this.songData.title+"</td></tr><tr class='artist-name'><td>"+this.songData.artist +"</td></tr><tr class='album-name dimmed'><td>"+this.songData.album+"</td></tr></table></div>";
 			}
-			if(this.config.alignment === 'left'){
+			if(this.config.alignment === 'left' || this.config.alignment === 'top'){
 				html += meta_html;
 				html += albumart_html;
 			}
