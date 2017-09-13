@@ -24,34 +24,34 @@ margin: 0px;}
 font-size:16px;
 margin: 0px;}
 
-.top {
+.scrobbler-top {
   display: block;
 }
 
-.top > .meta{
+.scrobbler-top > .meta{
   margin-bottom: 8px;
 }
 
-.bottom {
+.scrobbler-bottom {
   display: block;
 }
 
-.left {
+.scrobbler-left {
   display: inline-flex;
 }
 
-.right {
+.scrobbler-right {
   display: inline-flex;
 }
 
-.right > .meta{
+.scrobbler-right > .meta{
   margin-left: 16px;
 }
 
-.left {
+.scrobbler-left {
   display: inline-flex;
 }
 
-.left > .meta{
+.scrobbler-left > .meta{
   margin-right: 16px;
 }
