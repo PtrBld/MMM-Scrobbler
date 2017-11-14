@@ -74,7 +74,7 @@ Module.register("MMM-Scrobbler",{
 		return wrapper;
     },
 	queryLastFm: function(){
-		var url = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user="+this.config.username+"&api_key="+this.config.apikey+"&limit=1&format=json";
+		var url = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user="+this.config.username+"&api_key="+this.config.apikey+"&limit=1&format=json";
 		var self = this;		
 		var i = new XMLHttpRequest;
 		i.open("GET",url,true),i.onload=function(){
