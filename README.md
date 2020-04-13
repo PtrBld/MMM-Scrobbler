@@ -7,7 +7,7 @@ This is an extension for the [MagicMirror](https://github.com/MichMich/MagicMirr
 
 2. A new folder will appear. That's all :)
 
-##Configuration
+## Configuration
 You can scrobble all your music with Last.fm.
 
 1. Create an [account](https://secure.last.fm/de/join)
@@ -16,7 +16,7 @@ You can scrobble all your music with Last.fm.
 
 3. Configure your client to scrobble your music. [How To: Scrobble to Last.fm from iTunes, Spotify, and more](http://www.cnet.com/how-to/how-to-scrobble-to-last-fm-from-itunes-spotify-and-more/)
 
-##Module Usage
+## Module Usage
 The entry in the `module array` in your `config.js` can look like the following. Only username and apikey are mandatory fields. All other fields have default values.
 
 ```
