@@ -12,7 +12,7 @@ You can scrobble all your music with Last.fm.
 
 1. Create an [account](https://secure.last.fm/de/join)
 
-2. Create an [api key](http://www.last.fm/api/account/create)
+2. Create an [api key](http://www.last.fm/api/account/create) (-- INFO: The api key has to be exclusive. If you already have a api key from another project, just create a new one for this project.)
 
 3. Configure your client to scrobble your music. [How To: Scrobble to Last.fm from iTunes, Spotify, and more](http://www.cnet.com/how-to/how-to-scrobble-to-last-fm-from-itunes-spotify-and-more/)
 
