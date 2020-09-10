@@ -43,6 +43,8 @@ The entry in the `module array` in your `config.js` can look like the following.
 	    	showMetaData: true,
 		//Determines the position of the meta text. Possible values: top, bottom, left, right
 		alignment: "bottom", 
+		//The scrobbler api is quite buggy, this will retry the exact same thing if it fails due to an api error
+		//retryOnFailure: true,
 		}
 	
 }
