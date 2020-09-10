@@ -79,9 +79,10 @@ Module.register("MMM-Scrobbler",{
 		var i = new XMLHttpRequest;
 		i.open("GET",url,true),i.onload=function(){
 			var r=JSON.parse(i.responseText);
-			if(!(i.status>=200&&i.status<400)){
+			if(!(i.status>=200 && i.status<400)){
 				Log.error(r.message);
 				self.hide(1000);
+				self.updateDom();
 			}
 			var a = r.recenttracks.track[0] ? r.recenttracks.track[0] : r.recenttracks.track;
 			var nowplaying = false;
