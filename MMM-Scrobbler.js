@@ -9,6 +9,7 @@ Module.register("MMM-Scrobbler",{
 		animationSpeed: 1000,
 	    showAlbumArt: true,
 	    showMetaData: true,
+	    retryOnFailure: true,
 	    alignment: "bottom", //possible values: top, bottom, left, right
     },
 	getStyles: function() {
@@ -82,7 +83,9 @@ Module.register("MMM-Scrobbler",{
 			if(!(i.status>=200 && i.status<400)){
 				Log.error(r.message);
 				self.hide(1000);
-				self.updateDom();
+				if(this.config.retryOnFailure) {
+				    self.updateDom();
+				}
 			}
 			var a = r.recenttracks.track[0] ? r.recenttracks.track[0] : r.recenttracks.track;
 			var nowplaying = false;
